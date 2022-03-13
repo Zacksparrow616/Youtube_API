@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZackTube Search Videos</title>
+	
+	<!-- JAVASCRIPT Files-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+
+	<!--script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/media.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script type="text/javascript" src="js/fullscreen.js"></script>
+	<script type="text/javascript" src="js/gulpfile.js"></script-->
+
+
+	<!--CSS Files-->
+	
+	<!--link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	<link rel="stylesheet" type="text/css" href="css/thumbs.css">
+	<link rel="stylesheet" type="text/css" href="css/fullscreen.css"-->
+	<script>
+		$(document).ready(function(){
+			$(".fancybox").fancybox();
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Zack<span>Tube</span> </h1>
+			<p>Search All Videos Worldwide</p>
+		</header>
+		<section>
+			<form id="search-form" name="search-form" onsubmit="return searching()">
+				<div id="fieldcontainer">
+					<input type="search" name="search" id="query" class="search-field" placeholder="Type to search">
+					<input type="submit" name="search-btn" id="search-btn" value="">
+				</div>
+			</form>
+			<ul id="results"></ul>
+			<div id="buttons"></div>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2019 All Rghts Reserved</p>
+		</footer>
+	</div>
+</body>
+</html>
